@@ -1,6 +1,3 @@
-# checking for multiple conditions in the same line of code
-# if condition1 & condition2 & condition3:
-#    do this
 #  else:
 #    do that
 
@@ -33,4 +30,14 @@ elif age >= 45 and age <= 55:
   
 else:
   bill = 12
+  print(f"Adult tickets are ${bill}.")
+
+wants_photo = input("Do you want a photo taken Y or N. ")
+
+if wants_photo == "Y":
+  bill += 3
   print(f"Your bill is ${bill}.")
+
+else:
+  bill = bill
+  print(f"Your final bill comes to ${bill}.")
